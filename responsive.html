@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Responsive HTML images demo</title>
+    <style>
+      html {
+        font-family: sans-serif;
+        background-color: gray;
+      }
+
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+      }
+
+      header {
+        background: url(header.jpeg) no-repeat center;
+        height: 200px;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+
+    </header>
+
+    <main>
+      <section>
+        <h1>My Family</h1>
+        <h2>  Pequeña descripción de mi familia- JUNIO 2024</h2>
+
+        <p>Aqui estamos la Familia en el cumpleaños de Bonna Santillana Calle, nos acompaña mi hija Angelica Gianela Delgado Santillana, en donde estamos en casa de Chorrillos, con papa y mama. La foto fue tomada el año 2022.</p>
+        
+        <p>Yo esforzandome en terminar mi carrera, que me falta poco, y estudiando ingles a las 7 de la mañana todos los dias.</p>
+
+        <picture>
+          <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpeg">
+          <source media="(min-width: 800px)" srcset="elva-800w.jpeg">
+          <img src="elva-800w.jpeg" alt="Chris standing up holding his daughter Elva">
+        </picture>
+
+        <p>En la imagen se observa a papa Raul Delgado Alvino, en el dia de la semana del pisco peruano realizado en la plaza de Surco. Esa vez Angelica Gianela almorzo un rico chancho al palo. Me comento que fue delicioso. En la siguiente imegen se observa a Isabel Delgado santillana, simpre travieza observando una pescera en un chifa de Chorrillos.</p>
+
+        <img srcset="elva-fairy-480w.jpeg 480w,
+                     elva-fairy-800w.jpeg 800w"
+             sizes="(max-width: 600px) 480px,
+                    800px"
+             src="elva-fairy-800w.jpeg" alt="Elva dressed as a fairy">
+
+        <img srcset="cumple.jpeg 480w,
+                    cumple.jpeg 800w"
+              sizes="(max-width: 600px) 480px,
+                  800px"
+              src="elva-fairy-800w.jpeg" alt="Elva dressed as a fairy">
+
+        <p>Imagenes de la familia<a href="https://www.flickr.com/photos/miwok/17086751527/"> DELGADO SANTILLANA</a>.</p>
+      </section>
+    </main>
+  </body>
+</html>
